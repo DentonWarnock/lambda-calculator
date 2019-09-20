@@ -2,8 +2,8 @@ import React from "react";
 
 const OperatorButton = (props) => {
   return (
-    <>
-      <button key={props.key}>{props.operator.char}</button>
+    <>      
+        <button className="button operatorBtn" key={props.key}>{props.operator.char}</button>           
     </>
   );
 };

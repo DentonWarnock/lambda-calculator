@@ -3,7 +3,7 @@ import React from "react";
 const SpecialButton = (prpos) => {
   return (
     <>
-      <button key={prpos.key}>{prpos.special}</button>
+      <button className="button specialBtn" key={prpos.key}>{prpos.special}</button>
     </>
   );
 };
