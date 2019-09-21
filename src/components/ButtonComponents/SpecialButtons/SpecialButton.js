@@ -1,9 +1,9 @@
 import React from "react";
 
-const SpecialButton = (prpos) => {
+const SpecialButton = (props) => {
   return (
     <>
-      <button className="button specialBtn" key={prpos.key}>{prpos.special}</button>
+      <button onClick={() => props.clickFunction(props.special)} className="button specialBtn" key={props.key}>{props.special}</button>
     </>
   );
 };

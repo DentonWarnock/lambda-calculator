@@ -14,13 +14,17 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [value, setValue] = useState(0);
 
+  function clickSpecial(input) {
+    if (input === "C") {setValue(0)}; // reset button
+  }
+
   return (
     <div className="container">
       <Logo />
       <Display value={value}/>
       <div className="App">  
         <div className="app-row">      
-          <Specials />
+          <Specials clickFunction={clickSpecial} />
           <Numbers setValue={setValue} />
         </div>
           <Operators />
